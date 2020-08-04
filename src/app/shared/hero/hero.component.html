@@ -1,4 +1,15 @@
-<div class="hero-image mask rgba-black-strong">
+<div class="hero-image" [style.background]="backgroundImage">
+    <div class="hero-text">
+        <p class="mat-display-3">{{ heading }}</p>
+        <hr class="hr-light">
+        <p class="mat-title">{{ subheading }}</p>
+        <button mat-raised-button color="primary">View Stations</button>
+    </div>
+</div>
+
+
+
+<!-- <div class="hero-image mask rgba-black-strong">
     <div class="hero-text">
         <p class="mat-display-3">Jenova Bikes</p>
         <hr class="hr-light">
@@ -6,4 +17,4 @@
             provide real-time information on the amount of avaiable bikes and free spaces</p>
         <button mat-raised-button color="primary">View Stations</button>
     </div>
-</div>
+</div> -->
