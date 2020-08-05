@@ -9,7 +9,19 @@ import { Feature } from 'src/app/models/hero/feature.model';
 })
 export class FeatureComponent implements OnInit {
 
-@Input() feature: Feature;
+  @Input() feature: Feature;
+
+  get heading(): string {
+    return this.feature.heading;
+  }
+
+  get text(): string {
+    return this.feature.text
+  }
+
+  get image(): string {
+    return this.feature.image
+  }
 
   constructor() { }
 
