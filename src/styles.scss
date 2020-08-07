@@ -30,3 +30,18 @@ $jenova-bikes-theme: mat-light-theme($jenova-bikes-primary, $jenova-bikes-accent
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#feature-row:nth-of-type(odd){
+  flex-direction: row-reverse;
+}
+
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
