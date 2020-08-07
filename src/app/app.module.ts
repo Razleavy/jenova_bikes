@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { CoreModule } from './core/core.module';
-import { HeroComponent } from '../app/shared/hero/hero.component';
+import { HeroComponent } from "../app/shared/components/hero/hero.component";
+import { FeatureComponent } from './shared/components/feature/feature.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroComponent
+    HeroComponent,
+    FeatureComponent
   ],
   imports: [
     CoreModule,
