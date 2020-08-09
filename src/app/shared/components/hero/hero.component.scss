@@ -30,3 +30,8 @@
 .mat-typography .mat-display-3 {
   margin: 0;
 }
+
+#hero {
+  transform: translateZ(-3px) scale(2);
+  transform-style: preserve-3d;
+}
