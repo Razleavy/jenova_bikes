@@ -1,12 +1,14 @@
-.mat-toolbar{
-    height: 3rem;
-    justify-content: center;
-    color: white;
-    background-color: #343c66;
+.mat-toolbar {
+  height: 3rem;
+  justify-content: center;
+  color: white;
+  background-color: #343c66;
+  position: fixed;
+  z-index: 999;
 }
 
-.header-container{
-    width: calc(100% - 2rem);
-    max-width: 70rem;
-    margin: 0 1rem;
+.header-container {
+  width: calc(100% - 2rem);
+  max-width: 70rem;
+  margin: 0 1rem;
 }
