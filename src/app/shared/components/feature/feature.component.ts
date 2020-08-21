@@ -2,13 +2,15 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { Feature } from 'src/app/models/hero/feature.model';
 
+import { fadeInUpAnimation } from "../../../core/animations/slide.animation";
+
 @Component({
-  selector: 'app-feature',
-  templateUrl: './feature.component.html',
-  styleUrls: ['./feature.component.scss']
+  selector: "app-feature",
+  templateUrl: "./feature.component.html",
+  styleUrls: ["./feature.component.scss"],
+  animations: [fadeInUpAnimation],
 })
 export class FeatureComponent implements OnInit {
-
   @Input() feature: Feature;
 
   get heading(): string {
@@ -16,16 +18,14 @@ export class FeatureComponent implements OnInit {
   }
 
   get text(): string {
-    return this.feature.text
+    return this.feature.text;
   }
 
   get image(): string {
-    return this.feature.image
+    return this.feature.image;
   }
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
