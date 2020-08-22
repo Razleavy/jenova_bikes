@@ -39,7 +39,9 @@ export class SubjectObserver {
 
   private _handelEntries(entries: IntersectionObserverEntry[]): void {
     entries.forEach(entry => {
-      this._intersecting.next(entry.isIntersecting);
+      if(entry.isIntersecting){
+        this._intersecting.next(entry.isIntersecting);
+      }
     });
   }
 }
