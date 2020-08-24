@@ -1,6 +1,6 @@
 <div class="row" [ngClass]="isReversed">
 
-    <div class="col">
+    <div class="col" [@fadeInUpAnimation]='intersecting'>
         <img class="img-fluid" src="{{ image }}">
     </div>
 
@@ -11,3 +11,5 @@
     </div>
 
 </div>
+
+<div #intersetionArea></div>
