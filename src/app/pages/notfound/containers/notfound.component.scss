@@ -1,0 +1,20 @@
+.outer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  padding-top: 3rem;
+}
+
+.fade {
+  animation: fadeIn 2s infinite alternate;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
