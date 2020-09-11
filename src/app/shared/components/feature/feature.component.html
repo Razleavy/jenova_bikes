@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" [ngClass]="isReversed">
 
     <div class="col" [@fadeInUpAnimation]='intersecting'>
         <img class="img-fluid" src="{{ image }}">

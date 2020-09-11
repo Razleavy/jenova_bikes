@@ -37,6 +37,10 @@ export class FeatureComponent implements OnInit {
     return this.feature.image;
   }
 
+  get isReversed(): string {
+    return this.feature.isReversed ? 'row-reverse' : '';
+  }
+
   constructor(private _intersectionObserverService: IntersectionObserverService) { }
 
   ngOnInit(): void { }

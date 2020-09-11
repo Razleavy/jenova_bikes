@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
            Quisque commodo, leo at dignissim porta, lectus magna ultricies nunc, a faucibus leo massa ut ligula. Phasellus at hendrerit lectus. Maecenas fermentum ultricies sodales.`,
     image:
       "https://firebasestorage.googleapis.com/v0/b/jenovabikes.appspot.com/o/Map.PNG?alt=media&token=c4a6b073-6799-4958-b6f2-1567bc1f0778",
+    isReversed: false
   };
 
   featureTwo: Feature = {
@@ -29,9 +30,10 @@ export class HomeComponent implements OnInit {
            Quisque commodo, leo at dignissim porta, lectus magna ultricies nunc, a faucibus leo massa ut ligula. Phasellus at hendrerit lectus. Maecenas fermentum ultricies sodales.`,
     image:
       "https://firebasestorage.googleapis.com/v0/b/jenovabikes.appspot.com/o/Map.PNG?alt=media&token=c4a6b073-6799-4958-b6f2-1567bc1f0778",
+    isReversed: true
   };
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
